@@ -1,0 +1,138 @@
+:root {
+    --primary-color: hsl(47, 88%, 63%);
+    --secondary-color: hsl(0, 0%, 7%);
+    --description-color:  hsl(0, 0%, 42%);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    background-color: var(--primary-color);
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100vh;
+}
+main {
+    background-color: white;
+    border: 0.0625rem solid black;
+    border-radius: 1.2rem;
+    padding: 1.5rem;
+    box-shadow: 0.5rem 0.5rem var(--secondary-color);
+    font-family: figtree;
+    max-width: 25rem;
+}
+.illustration {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.6rem;
+    object-fit: cover;
+object-position: center;
+}
+.status {
+ background-color: var(--primary-color);
+ font-weight: 800;
+ padding: 0.4rem 0.8rem;
+ font-size: 0.8rem;
+ border-radius: 0.25rem;
+ border: none;
+ margin: 1rem 0;
+ transition: font-size 0.2s, color 0.2s, background-color 0.2s;
+}
+.status:hover {
+    font-size: 1rem;
+    cursor: pointer;
+}
+.status:active{
+    background-color: white;
+    color: var(--primary-color);
+    border: 0.1rem solid var(--primary-color);
+    
+}
+h1 {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--secondary-color);
+    cursor: pointer;
+    transition: font-size 0.2s, color 0.2s;
+}
+h1:hover {
+    font-size: 1.7rem;
+}
+h1:active{
+    color: var(--primary-color);
+    
+}
+.publish-time {
+    font-size: 0.85rem;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+.description {
+    color: var(--description-color);
+    line-height: 1.5rem;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+footer {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+}
+.avatar {
+    width: 2rem;
+    height: auto;
+}
+address {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 0.85rem;
+}
+figure {
+    width: 100%;
+    height: 12.625rem;
+}
+@media (max-width: 450px) {
+    body {
+        padding: 1.5rem;
+
+    }
+    main {
+        padding: 1re;
+    }
+    figure {
+        width: 100%;
+        height: 10.5rem;
+    }
+    .status {
+        font-size: 0.6rem;
+    }
+    .status:hover {
+        font-size: 0.8rem;
+        cursor: pointer;
+    }
+    h1 {
+        font-size: 1.2rem;
+    }
+    .publish-time {
+        font-size: 0.7rem;
+    }
+.description {
+    font-size: 0.7rem;
+    line-height: 1.1rem;
+}
+address {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 0.7rem;
+}
+.avatar {
+    width: 1.8rem;
+    height: auto;
+}
+}
